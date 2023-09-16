@@ -54,11 +54,11 @@ In the same directory as deployment.yaml, create a Terraform configuration (main
 Create a Terraform configuration file (e.g., prometheus.tf)
 
 ##Step 7: Apply Everything
-# Step 5
+Step 5
 terraform init
 terraform apply
 
-# Step 6 (Bonus)
+Step 6 
 terraform init
 terraform apply -target=helm_release.prometheus
 
