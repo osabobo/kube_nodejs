@@ -41,9 +41,9 @@ To deploy the Node.js application, follow these steps:
 
 ## Step 3: Dockerize and Push Node.js App to DockerHub
 Dockerize the Node.js app and push it to DockerHub:
-  docker build -t your-dockerhub-username/node-app:latest .
-  docker login
-  docker push your-dockerhub-username/node-app:latest
+1. docker build -t your-dockerhub-username/node-app:latest .
+2. docker login
+3. docker push your-dockerhub-username/node-app:latest
 
 
 ## Step 4: Create Kubernetes Deployment Manifest
