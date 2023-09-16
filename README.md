@@ -37,28 +37,28 @@ To deploy the Node.js application, follow these steps:
    cd node_app
 
 
-##Step 3: Dockerize and Push Node.js App to DockerHub
+## Step 3: Dockerize and Push Node.js App to DockerHub
 Dockerize the Node.js app and push it to DockerHub:
   docker build -t your-dockerhub-username/node-app:latest .
   docker login
   docker push your-dockerhub-username/node-app:latest
 
 
-##Step 4: Create Kubernetes Deployment Manifest
+## Step 4: Create Kubernetes Deployment Manifest
 Create a Kubernetes deployment manifest in a file named deployment.yaml
 
-##Step 5: Deploy using Terraform
+## Step 5: Deploy using Terraform
 In the same directory as deployment.yaml, create a Terraform configuration (main.tf)
 
-##Step 6 : Set Up Monitoring with Prometheus
+## Step 6 : Set Up Monitoring with Prometheus
 Create a Terraform configuration file (e.g., prometheus.tf)
 
-##Step 7: Apply Everything
-Step 5
+## Step 7: Apply Everything
+## Step 5
 terraform init
 terraform apply
 
-Step 6 
+## Step 6 
 terraform init
 terraform apply -target=helm_release.prometheus
 
