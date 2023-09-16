@@ -10,7 +10,7 @@ This repository provides a step-by-step guide and accompanying scripts for setti
 - [Step 3: Dockerize and Push Node.js App to DockerHub](#step-3-dockerize-and-push-nodejs-app-to-dockerhub)
 - [Step 4: Create Kubernetes Deployment Manifest](#step-4-create-kubernetes-deployment-manifest)
 - [Step 5: Deploy using Terraform](#step-5-deploy-using-terraform)
-- [Step 6 (Bonus): Set Up Monitoring with Prometheus](#step-6-bonus-set-up-monitoring-with-prometheus)
+- [Step 6 : Set Up Monitoring with Prometheus](#step-6-set-up-monitoring-with-prometheus)
 - [Step 7: Apply Everything](#step-7-apply-everything)
 
 ## Prerequisites
@@ -29,5 +29,7 @@ Run the provided Bash script to create a Kind cluster:
 
 ```bash
 chmod +x setup_kind_cluster.sh
-./setup_kind_cluster.sh
+./setup_kind_cluster.sh 
 
+
+##Step 1: Set Up a Kind Cluster
