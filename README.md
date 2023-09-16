@@ -25,7 +25,7 @@ Before starting, make sure you have the following installed:
 
 ## Step 1: Set Up a Kind Cluster
 
-[Run the provided Bash script to create a Kind cluster](setup_kind_cluster.sh).
+[Run the provided Bash script to create a Kind cluster](kind.sh).
 
 ## Step 2: Deploy the Node.js App using Terraform
 
