@@ -25,11 +25,41 @@ Before starting, make sure you have the following installed:
 
 ## Step 1: Set Up a Kind Cluster
 
-Run the provided Bash script to create a Kind cluster:
+[Run the provided Bash script to create a Kind cluster](setup_kind_cluster.sh).
 
-```bash
-chmod +x setup_kind_cluster.sh
-./setup_kind_cluster.sh 
+## Step 2: Deploy the Node.js App using Terraform
+
+To deploy the Node.js application, follow these steps:
+
+1. Change to the `node_app` directory:
+
+   ```bash
+   cd node_app
 
 
-##Step 1: Set Up a Kind Cluster
+##Step 3: Dockerize and Push Node.js App to DockerHub
+Dockerize the Node.js app and push it to DockerHub:
+  docker build -t your-dockerhub-username/node-app:latest .
+  docker login
+  docker push your-dockerhub-username/node-app:latest
+
+
+##Step 4: Create Kubernetes Deployment Manifest
+Create a Kubernetes deployment manifest in a file named deployment.yaml
+
+##Step 5: Deploy using Terraform
+In the same directory as deployment.yaml, create a Terraform configuration (main.tf)
+
+##Step 6 : Set Up Monitoring with Prometheus
+Create a Terraform configuration file (e.g., prometheus.tf)
+
+##Step 7: Apply Everything
+# Step 5
+terraform init
+terraform apply
+
+# Step 6 (Bonus)
+terraform init
+terraform apply -target=helm_release.prometheus
+
+Replace your-dockerhub-username with your actual DockerHub username.
