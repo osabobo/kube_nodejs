@@ -56,11 +56,11 @@ Create a Terraform configuration file (e.g., prometheus.tf)
 
 ## Step 7: Apply Everything
 ## Step 5
-terraform init
-terraform apply
+1. terraform init
+2. terraform apply
 
 ## Step 6 
-terraform init
-terraform apply -target=helm_release.prometheus
+1. terraform init
+2. terraform apply -target=helm_release.prometheus
 
 Replace your-dockerhub-username with your actual DockerHub username.
