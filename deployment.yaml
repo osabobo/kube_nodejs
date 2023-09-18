@@ -1,19 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app-deployment
+  name: my-node-app-deployment
+  namespace: default   # Specify your desired namespace here
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node-app
+      app: my-node-app
   template:
     metadata:
       labels:
-        app: node-app
+        app: my-node-app
     spec:
       containers:
-        - name: node-app
-          image: your-docker-hub-username/node-app:latest
+        - name: my-node-app-container
+          image: osabo/node-app:latest
           ports:
             - containerPort: 3000
+
+
