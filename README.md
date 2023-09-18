@@ -35,8 +35,7 @@ To deploy the Node.js application, follow these steps:
 
    ```bash
    cd node_app
-   terraform init
-   terraform apply
+   
 
 
 ## Step 3: Dockerize and Push Node.js App to DockerHub
