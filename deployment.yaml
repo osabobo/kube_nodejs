@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: osabo/node-app:latest
+          image: your-docker-hub-username/node-app:latest
           ports:
             - containerPort: 3000
