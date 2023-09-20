@@ -56,7 +56,10 @@ Create a Terraform configuration file (e.g., prometheus.tf)
 
 ## Step 7: Apply Everything
 ## Step 5
-1. kubectl apply -f deployment.yaml
+```bash
+   cd deploy
+   terraform init
+   terraform apply
 
 
 ## Step 6 
