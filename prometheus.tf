@@ -6,18 +6,21 @@ provider "helm" {
 
 provider "kubernetes" {
   config_path = "~/.kube/config"
+
 }
 
 resource "helm_release" "prometheus" {
   name       = "prometheus"
-  chart      = "prometheus-community/kube-prometheus-stack"
-  version    = "13.5.0"
+  repository = "https://prometheus-community.github.io/helm-charts"
+  chart      = "kube-prometheus-stack"
   namespace  = "default"
+  version    = " "
   wait       = true
-  timeout    = 15
+  
 
   set {
     name  = "service.type"
     value = "NodePort"
   }
 }
+
