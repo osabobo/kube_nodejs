@@ -18,9 +18,5 @@ resource "helm_release" "prometheus" {
   wait       = true
   
 
-  set {
-    name  = "service.type"
-    value = "NodePort"
-  }
 }
 
